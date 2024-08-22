@@ -2,15 +2,12 @@ package com.mycompany.mavenproject1;
 
 import java.util.Scanner;
 
-/**
- *
- * @author SCIS3-10
- */
+
 public class Mavenproject1 {
 
     public static void main(String[] args) {
         long startTime = System.nanoTime();
-        int number = 4;
+        int number = 496;
         int count = 0;
 
         for (int i = 1; i < number; i++) {
@@ -24,12 +21,12 @@ public class Mavenproject1 {
         }
 
         if (count == number) {
-            System.out.println("El numero" + number + "es perfecto");
+            System.out.println("El numero " + number + " es perfecto");
 
         }
 
         long endTime = System.nanoTime() - startTime;
-        System.out.println("El tiempo " + endTime);
+        System.out.println("El tiempo en nanosegundos es: " + endTime);
 
     }
 }
